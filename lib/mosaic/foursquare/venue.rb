@@ -3,7 +3,7 @@ require 'mosaic/foursquare/object'
 module Mosaic
   module Foursquare
     class Venue < Mosaic::Foursquare::Object
-      attr_reader :canonical_url, :created_at, :description, :id, :mayor, :name, :short_url, :stats, :tags, :url
+      attr_accessor :canonical_url, :created_at, :description, :id, :location, :mayor, :name, :short_url, :stats, :tags, :url
 
       class << self
         def find(id, options = {})
@@ -12,14 +12,21 @@ module Mosaic
         end
       end
 
+      # locally defined location object (until general one is required)
+      class Location < Mosaic::Foursquare::Object
+        attr_reader :lat, :lng
+      end
+
+      # locally defined stats object (general one is probably not required)
       class Stats < Mosaic::Foursquare::Object
         attr_reader :checkins_count, :users_count, :tip_count
       end
 
       def initialize(attributes = {})
         super
-        @mayor &&= Mosaic::Foursquare::User.new(@mayor['user'])
-        @stats &&= Mosaic::Foursquare::Venue::Stats.new(@stats)
+        self.location &&= Mosaic::Foursquare::Venue::Location.new(self.location)
+        self.mayor &&= Mosaic::Foursquare::User.new(self.mayor['user'])
+        self.stats &&= Mosaic::Foursquare::Venue::Stats.new(self.stats)
       end
 
       def herenow(options = {})

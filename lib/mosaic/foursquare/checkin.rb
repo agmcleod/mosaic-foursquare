@@ -3,11 +3,11 @@ require 'mosaic/foursquare/object'
 module Mosaic
   module Foursquare
     class Checkin < Mosaic::Foursquare::Object
-      attr_reader :created_at, :id, :shout, :user
+      attr_accessor :created_at, :id, :shout, :user, :venue
 
       def initialize(attributes = {})
         super
-        @user &&= Mosaic::Foursquare::User.new(@user)
+        self.user &&= Mosaic::Foursquare::User.new(self.user)
       end
     end
   end
