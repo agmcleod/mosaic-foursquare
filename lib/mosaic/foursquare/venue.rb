@@ -25,7 +25,7 @@ module Mosaic
       def initialize(attributes = {})
         super
         self.location &&= Mosaic::Foursquare::Venue::Location.new(self.location)
-        self.mayor &&= Mosaic::Foursquare::User.new(self.mayor['user'])
+        self.mayor &&= (self.mayor['user'] ? Mosaic::Foursquare::User.new(self.mayor['user']) : nil)
         self.stats &&= Mosaic::Foursquare::Venue::Stats.new(self.stats)
       end
 
