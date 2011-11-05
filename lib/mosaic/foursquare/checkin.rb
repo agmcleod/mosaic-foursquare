@@ -5,6 +5,13 @@ module Mosaic
     class Checkin < Mosaic::Foursquare::Object
       attr_accessor :created_at, :id, :photos, :shout, :user, :venue
 
+      class << self
+        def find(id, options = {})
+          response = query("/checkins/#{id}", options)
+          self.new response['response']['checkin']
+        end
+      end
+
       def initialize(attributes = {})
         super
         self.user &&= Mosaic::Foursquare::User.new(self.user)
