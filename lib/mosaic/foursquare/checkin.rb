@@ -14,8 +14,9 @@ module Mosaic
 
       def initialize(attributes = {})
         super
-        self.user &&= Mosaic::Foursquare::User.new(self.user)
         self.photos &&= self.photos['items'].collect { |item| Mosaic::Foursquare::Photo.new(item) }
+        self.user &&= Mosaic::Foursquare::User.new(self.user)
+        self.venue &&= Mosaic::Foursquare::Venue.new(self.venue)
       end
     end
   end
