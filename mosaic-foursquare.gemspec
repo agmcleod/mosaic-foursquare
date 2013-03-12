@@ -13,11 +13,8 @@ Gem::Specification.new do |s|
   s.summary     = "Mosaic Sales Solutions Foursquare API wrapper."
   s.description = "Wrapper for the Foursquare API with support for the venues API."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files =`git ls-files`.split($/)
+  #s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.0.5"
-  s.add_dependency "httparty", "~> 0.7.7"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "httparty", "~> 0.10.2"
 end
