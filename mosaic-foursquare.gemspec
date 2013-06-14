@@ -14,7 +14,12 @@ Gem::Specification.new do |s|
   s.description = "Wrapper for the Foursquare API with support for the venues API."
 
   s.files =`git ls-files`.split($/)
-  #s.test_files = Dir["test/**/*"]
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency "httparty", "~> 0.10.2"
+
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
 end

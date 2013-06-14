@@ -1,0 +1,453 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 18:34:26 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "171"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7418"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v36-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"venue\":{\"id\":\"venue_id\",\"name\":\"Mosaic Sales Solutions\",\"contact\":{\"twitter\":\"mosaicna\"},\"location\":{\"address\":\"100 Liberty St.\",\"lat\":43.63792664630825,\"lng\":-79.42476481873426,\"radius50\":16,\"radius90\":300,\"postalCode\":\"M6K 3L7\",\"city\":\"Toronto\",\"state\":\"ON\",\"country\":\"Canada\",\"cc\":\"CA\"},\"canonicalUrl\":\"https:\\/\\/foursquare.com\\/v\\/mosaic-sales-solutions\\/venue_id\",\"categories\":[{\"id\":\"4bf58dd8d48988d124941735\",\"name\":\"Office\",\"pluralName\":\"Offices\",\"shortName\":\"Corporate \\/ Office\",\"icon\":{\"prefix\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/building\\/default_\",\"suffix\":\".png\"},\"primary\":true}],\"verified\":true,\"stats\":{\"checkinsCount\":468,\"usersCount\":58,\"tipCount\":0},\"url\":\"http:\\/\\/www.mosaic.com\",\"likes\":{\"count\":1,\"groups\":[{\"type\":\"others\",\"count\":1,\"items\":[{\"id\":\"6825177\",\"firstName\":\"Alison\",\"lastName\":\"T.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/DW3PI2TBC5CB4WW3.jpg\"}}]}],\"summary\":\"Alison T\"},\"like\":false,\"dislike\":false,\"friendVisits\":{\"count\":1,\"summary\":\"You've been here\",\"items\":[{\"visitedCount\":7,\"liked\":false,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]},\"beenHere\":{\"count\":7,\"marked\":true},\"specials\":{\"count\":0,\"items\":[]},\"photos\":{\"count\":16,\"groups\":[{\"type\":\"venue\",\"name\":\"Venue photos\",\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"}]}]},\"hereNow\":{\"count\":1,\"summary\":\"You are here\",\"groups\":[{\"type\":\"friends\",\"name\":\"Friends here\",\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]}]},\"venuePage\":{\"id\":\"58526926\"},\"reasons\":{\"count\":1,\"items\":[{\"summary\":\"You're here! +1 point\",\"type\":\"general\",\"reasonName\":\"hereNowReason\",\"target\":{\"type\":\"navigation\",\"object\":{\"id\":\"51bb6232498eb6b5cc78dc80\",\"type\":\"checkinDetail\",\"target\":{\"type\":\"path\",\"url\":\"\\/checkins\\/51bb6224498e807919ff3678\"},\"ignorable\":false}}}]},\"description\":\"Toronto Hub\",\"createdAt\":1327937015,\"mayor\":{\"count\":10,\"user\":{\"id\":\"1098436\",\"firstName\":\"Julie\",\"lastName\":\"S.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/photid.jpg\"}}},\"tips\":{\"count\":0,\"groups\":[]},\"tags\":[],\"shortUrl\":\"http:\\/\\/4sq.com\\/zFqVtz\",\"timeZone\":\"America\\/Toronto\",\"listed\":{\"count\":0,\"groups\":[]},\"roles\":[\"manager\"],\"page\":{\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}}},\"popular\":{\"status\":\"None listed\",\"isOpen\":false,\"timeframes\":[{\"days\":\"Today\",\"includesToday\":true,\"open\":[{\"renderedTime\":\"6:00 AM\\u20132:00 PM\"}],\"segments\":[]},{\"days\":\"Sat\\u2013Sun\",\"open\":[{\"renderedTime\":\"None\"}],\"segments\":[]},{\"days\":\"Mon\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20131:00 PM\"}],\"segments\":[]},{\"days\":\"Tue\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]},{\"days\":\"Wed\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20134:00 PM\"}],\"segments\":[]},{\"days\":\"Thu\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]}]},\"pageUpdates\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498eebae7ad9dcf1\",\"createdAt\":1371155892,\"page\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}},\"shout\":\"Welcome to Test Venue\",\"entities\":[],\"photos\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498e955a3a98c977\",\"createdAt\":1371155892,\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/58526926_8juZxNlpCOOIM5nM4Iad6LfMBNj2SXjt3Lc4TV6ThrQ.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"}},\"visibility\":\"public\"}]},\"logView\":true,\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]},\"storeId\":\"\"}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 18:34:23 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id/herenow?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 18:34:26 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "18"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "464"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v41-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"hereNow\":{\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 18:34:23 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id/photos?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 18:34:26 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "55"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7799"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v43-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"photos\":{\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d793be4b013d9a539ddaf\",\"createdAt\":1334671675,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/pYOnQb98XkxjSYPZ4MiWmJSLm2_T9apFg93qTQJqvRw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7902e4b09ac7a7f5ab64\",\"createdAt\":1334671618,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/F2utuUfo9yPKuszWd75Ey2eOxrwHsbwsKb7W4Xmbf-w.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78d6e4b08f9379a72fca\",\"createdAt\":1334671574,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/UR-S62SzK6Pxck4hBHuOs2T3-h5cBaLW_hzKgKDajJs.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78abe4b02244912c1960\",\"createdAt\":1334671531,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/NaexIu_c7uhrFFOslRk-c9Ruq-BqCsKJCFwSZQjGhhw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba0579498e4bda57e1f154\",\"createdAt\":1371145593,\"source\":{\"name\":\"foursquare for Android\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/android\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/47216706_gQUCcv8CawVcf3nR_hphrWXX1QxgDqQINFsbpCF64Uk.jpg\",\"width\":640,\"height\":960,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"visibility\":\"public\"},{\"id\":\"51b8bcff498ecd5bbdaf7608\",\"createdAt\":1371061503,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_o4KY9mHmhsuZAg9XB3dUq3Tpkwgwts9YFVwVnhfNQ3w.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50d0f198e4b0bb4715475c3d\",\"createdAt\":1355870616,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_enEtmOqcaL5daGushQNdL_tbXdmiBDr0lkHJxy1u37E.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50b8e4d4e4b0e015e448565c\",\"createdAt\":1354294484,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/789540_tozWpLC2vq7xguO7SDgkhN1_SFHMOwl_NAwgGCubpKg.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"789540\",\"firstName\":\"kaitlin\",\"lastName\":\"h.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/U2B4LV4GVD5HINIA.jpg\"}},\"visibility\":\"public\"},{\"id\":\"502d1fd2e4b0d68f36a3b8eb\",\"createdAt\":1345134546,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nHeGnvHA6f6XSCGN9BBc11n8wNKeoMujR69sCeWRcdE.jpg\",\"width\":720,\"height\":540,\"user\":{\"id\":\"23756022\",\"firstName\":\"Stephan\",\"lastName\":\"G.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ILC43H2JIUO2RUVY.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7884e4b08101160bdec8\",\"createdAt\":1334671492,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nwesuQsT8PtThRaAbPjBhhEISigJfi86-79utbdqSww.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"}],\"dupesRemoved\":0}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 18:34:24 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:10:58 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "908"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7418"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v37-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"venue\":{\"id\":\"venue_id\",\"name\":\"Mosaic Sales Solutions\",\"contact\":{\"twitter\":\"mosaicna\"},\"location\":{\"address\":\"100 Liberty St.\",\"lat\":43.63792664630825,\"lng\":-79.42476481873426,\"radius50\":16,\"radius90\":300,\"postalCode\":\"M6K 3L7\",\"city\":\"Toronto\",\"state\":\"ON\",\"country\":\"Canada\",\"cc\":\"CA\"},\"canonicalUrl\":\"https:\\/\\/foursquare.com\\/v\\/mosaic-sales-solutions\\/venue_id\",\"categories\":[{\"id\":\"4bf58dd8d48988d124941735\",\"name\":\"Office\",\"pluralName\":\"Offices\",\"shortName\":\"Corporate \\/ Office\",\"icon\":{\"prefix\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/building\\/default_\",\"suffix\":\".png\"},\"primary\":true}],\"verified\":true,\"stats\":{\"checkinsCount\":468,\"usersCount\":58,\"tipCount\":0},\"url\":\"http:\\/\\/www.mosaic.com\",\"likes\":{\"count\":1,\"groups\":[{\"type\":\"others\",\"count\":1,\"items\":[{\"id\":\"6825177\",\"firstName\":\"Alison\",\"lastName\":\"T.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/DW3PI2TBC5CB4WW3.jpg\"}}]}],\"summary\":\"Alison T\"},\"like\":false,\"dislike\":false,\"friendVisits\":{\"count\":1,\"summary\":\"You've been here\",\"items\":[{\"visitedCount\":7,\"liked\":false,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]},\"beenHere\":{\"count\":7,\"marked\":true},\"specials\":{\"count\":0,\"items\":[]},\"photos\":{\"count\":16,\"groups\":[{\"type\":\"venue\",\"name\":\"Venue photos\",\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"}]}]},\"hereNow\":{\"count\":1,\"summary\":\"You are here\",\"groups\":[{\"type\":\"friends\",\"name\":\"Friends here\",\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]}]},\"venuePage\":{\"id\":\"58526926\"},\"reasons\":{\"count\":1,\"items\":[{\"summary\":\"You're here! +1 point\",\"type\":\"general\",\"reasonName\":\"hereNowReason\",\"target\":{\"type\":\"navigation\",\"object\":{\"id\":\"51bb6ac2498e58ef374af255\",\"type\":\"checkinDetail\",\"target\":{\"type\":\"path\",\"url\":\"\\/checkins\\/51bb6224498e807919ff3678\"},\"ignorable\":false}}}]},\"description\":\"Toronto Hub\",\"createdAt\":1327937015,\"mayor\":{\"count\":10,\"user\":{\"id\":\"1098436\",\"firstName\":\"Julie\",\"lastName\":\"S.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/photid.jpg\"}}},\"tips\":{\"count\":0,\"groups\":[]},\"tags\":[],\"shortUrl\":\"http:\\/\\/4sq.com\\/zFqVtz\",\"timeZone\":\"America\\/Toronto\",\"listed\":{\"count\":0,\"groups\":[]},\"roles\":[\"manager\"],\"page\":{\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}}},\"popular\":{\"status\":\"None listed\",\"isOpen\":false,\"timeframes\":[{\"days\":\"Today\",\"includesToday\":true,\"open\":[{\"renderedTime\":\"6:00 AM\\u20132:00 PM\"}],\"segments\":[]},{\"days\":\"Sat\\u2013Sun\",\"open\":[{\"renderedTime\":\"None\"}],\"segments\":[]},{\"days\":\"Mon\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20131:00 PM\"}],\"segments\":[]},{\"days\":\"Tue\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]},{\"days\":\"Wed\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20134:00 PM\"}],\"segments\":[]},{\"days\":\"Thu\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]}]},\"pageUpdates\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498eebae7ad9dcf1\",\"createdAt\":1371155892,\"page\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}},\"shout\":\"Welcome to Test Venue\",\"entities\":[],\"photos\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498e955a3a98c977\",\"createdAt\":1371155892,\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/58526926_8juZxNlpCOOIM5nM4Iad6LfMBNj2SXjt3Lc4TV6ThrQ.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"venue_id\"}},\"visibility\":\"public\"}]},\"logView\":true,\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]},\"storeId\":\"\"}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:10:55 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id/herenow?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:10:58 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "44"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "464"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v41-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"hereNow\":{\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:10:55 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/venue_id/photos?oauth_token=oauth_token&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:10:58 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "58"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7799"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v42-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"photos\":{\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d793be4b013d9a539ddaf\",\"createdAt\":1334671675,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/pYOnQb98XkxjSYPZ4MiWmJSLm2_T9apFg93qTQJqvRw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7902e4b09ac7a7f5ab64\",\"createdAt\":1334671618,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/F2utuUfo9yPKuszWd75Ey2eOxrwHsbwsKb7W4Xmbf-w.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78d6e4b08f9379a72fca\",\"createdAt\":1334671574,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/UR-S62SzK6Pxck4hBHuOs2T3-h5cBaLW_hzKgKDajJs.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78abe4b02244912c1960\",\"createdAt\":1334671531,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/NaexIu_c7uhrFFOslRk-c9Ruq-BqCsKJCFwSZQjGhhw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba0579498e4bda57e1f154\",\"createdAt\":1371145593,\"source\":{\"name\":\"foursquare for Android\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/android\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/47216706_gQUCcv8CawVcf3nR_hphrWXX1QxgDqQINFsbpCF64Uk.jpg\",\"width\":640,\"height\":960,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"visibility\":\"public\"},{\"id\":\"51b8bcff498ecd5bbdaf7608\",\"createdAt\":1371061503,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_o4KY9mHmhsuZAg9XB3dUq3Tpkwgwts9YFVwVnhfNQ3w.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50d0f198e4b0bb4715475c3d\",\"createdAt\":1355870616,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_enEtmOqcaL5daGushQNdL_tbXdmiBDr0lkHJxy1u37E.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50b8e4d4e4b0e015e448565c\",\"createdAt\":1354294484,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/789540_tozWpLC2vq7xguO7SDgkhN1_SFHMOwl_NAwgGCubpKg.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"789540\",\"firstName\":\"kaitlin\",\"lastName\":\"h.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/U2B4LV4GVD5HINIA.jpg\"}},\"visibility\":\"public\"},{\"id\":\"502d1fd2e4b0d68f36a3b8eb\",\"createdAt\":1345134546,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nHeGnvHA6f6XSCGN9BBc11n8wNKeoMujR69sCeWRcdE.jpg\",\"width\":720,\"height\":540,\"user\":{\"id\":\"23756022\",\"firstName\":\"Stephan\",\"lastName\":\"G.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ILC43H2JIUO2RUVY.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7884e4b08101160bdec8\",\"createdAt\":1334671492,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nwesuQsT8PtThRaAbPjBhhEISigJfi86-79utbdqSww.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"}],\"dupesRemoved\":0}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:10:56 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/4f26b5f7e4b06176468b447d?oauth_token=IXQKZUDCIA2NS1ETZPHEEWIFXIV1ZV2CZVFMXFLXEQHKUZ0N&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:12:16 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "92"
+      X-Ratelimit-Limit:
+      - "500"
+      X-Ratelimit-Remaining:
+      - "487"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7418"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v41-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"venue\":{\"id\":\"4f26b5f7e4b06176468b447d\",\"name\":\"Mosaic Sales Solutions\",\"contact\":{\"twitter\":\"mosaicna\"},\"location\":{\"address\":\"100 Liberty St.\",\"lat\":43.63792664630825,\"lng\":-79.42476481873426,\"radius50\":16,\"radius90\":300,\"postalCode\":\"M6K 3L7\",\"city\":\"Toronto\",\"state\":\"ON\",\"country\":\"Canada\",\"cc\":\"CA\"},\"canonicalUrl\":\"https:\\/\\/foursquare.com\\/v\\/mosaic-sales-solutions\\/4f26b5f7e4b06176468b447d\",\"categories\":[{\"id\":\"4bf58dd8d48988d124941735\",\"name\":\"Office\",\"pluralName\":\"Offices\",\"shortName\":\"Corporate \\/ Office\",\"icon\":{\"prefix\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/building\\/default_\",\"suffix\":\".png\"},\"primary\":true}],\"verified\":true,\"stats\":{\"checkinsCount\":468,\"usersCount\":58,\"tipCount\":0},\"url\":\"http:\\/\\/www.mosaic.com\",\"likes\":{\"count\":1,\"groups\":[{\"type\":\"others\",\"count\":1,\"items\":[{\"id\":\"6825177\",\"firstName\":\"Alison\",\"lastName\":\"T.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/DW3PI2TBC5CB4WW3.jpg\"}}]}],\"summary\":\"Alison T\"},\"like\":false,\"dislike\":false,\"friendVisits\":{\"count\":1,\"summary\":\"You've been here\",\"items\":[{\"visitedCount\":7,\"liked\":false,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]},\"beenHere\":{\"count\":7,\"marked\":true},\"specials\":{\"count\":0,\"items\":[]},\"photos\":{\"count\":16,\"groups\":[{\"type\":\"venue\",\"name\":\"Venue photos\",\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"}]}]},\"hereNow\":{\"count\":1,\"summary\":\"You are here\",\"groups\":[{\"type\":\"friends\",\"name\":\"Friends here\",\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}}}]}]},\"venuePage\":{\"id\":\"58526926\"},\"reasons\":{\"count\":1,\"items\":[{\"summary\":\"You're here! +1 point\",\"type\":\"general\",\"reasonName\":\"hereNowReason\",\"target\":{\"type\":\"navigation\",\"object\":{\"id\":\"51bb6b10498e474d9e6c6858\",\"type\":\"checkinDetail\",\"target\":{\"type\":\"path\",\"url\":\"\\/checkins\\/51bb6224498e807919ff3678\"},\"ignorable\":false}}}]},\"description\":\"Toronto Hub\",\"createdAt\":1327937015,\"mayor\":{\"count\":10,\"user\":{\"id\":\"1098436\",\"firstName\":\"Julie\",\"lastName\":\"S.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/photid.jpg\"}}},\"tips\":{\"count\":0,\"groups\":[]},\"tags\":[],\"shortUrl\":\"http:\\/\\/4sq.com\\/zFqVtz\",\"timeZone\":\"America\\/Toronto\",\"listed\":{\"count\":0,\"groups\":[]},\"roles\":[\"manager\"],\"page\":{\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"4f26b5f7e4b06176468b447d\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}}},\"popular\":{\"status\":\"None listed\",\"isOpen\":false,\"timeframes\":[{\"days\":\"Today\",\"includesToday\":true,\"open\":[{\"renderedTime\":\"6:00 AM\\u20132:00 PM\"}],\"segments\":[]},{\"days\":\"Sat\\u2013Sun\",\"open\":[{\"renderedTime\":\"None\"}],\"segments\":[]},{\"days\":\"Mon\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20131:00 PM\"}],\"segments\":[]},{\"days\":\"Tue\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]},{\"days\":\"Wed\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20134:00 PM\"}],\"segments\":[]},{\"days\":\"Thu\",\"open\":[{\"renderedTime\":\"6:00 AM\\u20135:00 PM\"}],\"segments\":[]}]},\"pageUpdates\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498eebae7ad9dcf1\",\"createdAt\":1371155892,\"page\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"4f26b5f7e4b06176468b447d\"},\"tips\":{\"count\":0},\"homeCity\":\"Toronto, ON\",\"bio\":\"\",\"contact\":{}},\"shout\":\"Welcome to Test Venue\",\"entities\":[],\"photos\":{\"count\":1,\"items\":[{\"id\":\"51ba2db4498e955a3a98c977\",\"createdAt\":1371155892,\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/58526926_8juZxNlpCOOIM5nM4Iad6LfMBNj2SXjt3Lc4TV6ThrQ.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"58526926\",\"firstName\":\"Mosaic Sales Solutions\",\"gender\":\"none\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/IOZFSQWJEE3ZU5C1.png\"},\"type\":\"venuePage\",\"venue\":{\"id\":\"4f26b5f7e4b06176468b447d\"}},\"visibility\":\"public\"}]},\"logView\":true,\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]},\"storeId\":\"\"}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:12:13 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/4f26b5f7e4b06176468b447d/herenow?oauth_token=IXQKZUDCIA2NS1ETZPHEEWIFXIV1ZV2CZVFMXFLXEQHKUZ0N&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:12:16 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "27"
+      X-Ratelimit-Limit:
+      - "0"
+      X-Ratelimit-Remaining:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "464"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v37-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"hereNow\":{\"count\":1,\"items\":[{\"id\":\"51bb6224498e807919ff3678\",\"createdAt\":1371234852,\"type\":\"checkin\",\"timeZoneOffset\":-240,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"likes\":{\"count\":0,\"groups\":[]},\"like\":false}]}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:12:13 GMT
+- request:
+    method: get
+    uri: https://api.foursquare.com/v2/venues/4f26b5f7e4b06176468b447d/photos?oauth_token=IXQKZUDCIA2NS1ETZPHEEWIFXIV1ZV2CZVFMXFLXEQHKUZ0N&v=20130614
+    body:
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2013 19:12:16 GMT
+      Server:
+      - ngx_openresty/1.2.3.8
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracer-Time:
+      - "41"
+      X-Ratelimit-Limit:
+      - "500"
+      X-Ratelimit-Remaining:
+      - "485"
+      Strict-Transport-Security:
+      - max-age=864000
+      X-Ex:
+      - fastly_cdn
+      Content-Length:
+      - "7799"
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - "0"
+      X-Served-By:
+      - cache-v42-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+    body:
+      encoding: US-ASCII
+      string: "{\"meta\":{\"code\":200},\"notifications\":[{\"type\":\"notificationTray\",\"item\":{\"unreadCount\":0}}],\"response\":{\"photos\":{\"count\":16,\"items\":[{\"id\":\"50a66c82498e38a3121ca08e\",\"createdAt\":1353084034,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/photopath.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba060f498e4a6d22f8e9fc\",\"createdAt\":1371145743,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_9k-4vbHIvBcCDsbZczQMlqAOahoyhte0ruBtOcHOCXw.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f99c02de4b0904b0183a425\",\"createdAt\":1335476269,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/_tPARpvT0kAY7X4kLq3ck7kgGaqlsVEfD6JMDJjqo1g.jpg\",\"width\":537,\"height\":720,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f31784de4b010a3c037996e\",\"createdAt\":1328642125,\"source\":{\"name\":\"foursquare for BlackBerry\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/blackberry\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/dJqEpqYg-HhRQRt3byz-Ci8rbEaltjBXsLZC2yhZ9Ko.jpg\",\"width\":346,\"height\":461,\"user\":{\"id\":\"7090923\",\"firstName\":\"Ashleigh\",\"lastName\":\"M.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/LMTAKTQOTOBIHY2J.jpg\"}},\"visibility\":\"public\"},{\"id\":\"511d0dd2e4b0962fa8dec2da\",\"createdAt\":1360858578,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_6KYfbFthAGGXNdUpJYE9bR2tquxYAWVQVLKNAlXJ4TY.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51534173e4b0276ef48e91de\",\"createdAt\":1364410739,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/1383760_LZnXDGadsoZbTarHJPOk_v6MFMeIkBrn86V_LXMS7Sw.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"1383760\",\"firstName\":\"Khaleed\",\"lastName\":\"J.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ZP0WXOZNXQWBGM5I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d793be4b013d9a539ddaf\",\"createdAt\":1334671675,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/pYOnQb98XkxjSYPZ4MiWmJSLm2_T9apFg93qTQJqvRw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7902e4b09ac7a7f5ab64\",\"createdAt\":1334671618,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/F2utuUfo9yPKuszWd75Ey2eOxrwHsbwsKb7W4Xmbf-w.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78d6e4b08f9379a72fca\",\"createdAt\":1334671574,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/UR-S62SzK6Pxck4hBHuOs2T3-h5cBaLW_hzKgKDajJs.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d78abe4b02244912c1960\",\"createdAt\":1334671531,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/NaexIu_c7uhrFFOslRk-c9Ruq-BqCsKJCFwSZQjGhhw.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"51ba0579498e4bda57e1f154\",\"createdAt\":1371145593,\"source\":{\"name\":\"foursquare for Android\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/android\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/47216706_gQUCcv8CawVcf3nR_hphrWXX1QxgDqQINFsbpCF64Uk.jpg\",\"width\":640,\"height\":960,\"user\":{\"id\":\"47216706\",\"firstName\":\"Joe\",\"lastName\":\"Mosaic\",\"gender\":\"male\",\"relationship\":\"self\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/blank_boy.png\"}},\"visibility\":\"public\"},{\"id\":\"51b8bcff498ecd5bbdaf7608\",\"createdAt\":1371061503,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/150695_o4KY9mHmhsuZAg9XB3dUq3Tpkwgwts9YFVwVnhfNQ3w.jpg\",\"width\":717,\"height\":959,\"user\":{\"id\":\"150695\",\"firstName\":\"S Brent\",\"lastName\":\"F.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/T0TUPCSMEC0VPEGC.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50d0f198e4b0bb4715475c3d\",\"createdAt\":1355870616,\"source\":{\"name\":\"Instagram\",\"url\":\"http:\\/\\/instagram.com\"},\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/64093_enEtmOqcaL5daGushQNdL_tbXdmiBDr0lkHJxy1u37E.jpg\",\"width\":612,\"height\":612,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"},{\"id\":\"50b8e4d4e4b0e015e448565c\",\"createdAt\":1354294484,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/789540_tozWpLC2vq7xguO7SDgkhN1_SFHMOwl_NAwgGCubpKg.jpg\",\"width\":540,\"height\":540,\"user\":{\"id\":\"789540\",\"firstName\":\"kaitlin\",\"lastName\":\"h.\",\"gender\":\"female\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/U2B4LV4GVD5HINIA.jpg\"}},\"visibility\":\"public\"},{\"id\":\"502d1fd2e4b0d68f36a3b8eb\",\"createdAt\":1345134546,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs2.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nHeGnvHA6f6XSCGN9BBc11n8wNKeoMujR69sCeWRcdE.jpg\",\"width\":720,\"height\":540,\"user\":{\"id\":\"23756022\",\"firstName\":\"Stephan\",\"lastName\":\"G.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs3.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/ILC43H2JIUO2RUVY.jpg\"}},\"visibility\":\"public\"},{\"id\":\"4f8d7884e4b08101160bdec8\",\"createdAt\":1334671492,\"source\":{\"name\":\"foursquare for iPhone\",\"url\":\"https:\\/\\/foursquare.com\\/download\\/#\\/iphone\"},\"prefix\":\"https:\\/\\/irs1.4sqi.net\\/img\\/general\\/\",\"suffix\":\"\\/nwesuQsT8PtThRaAbPjBhhEISigJfi86-79utbdqSww.jpg\",\"width\":720,\"height\":537,\"user\":{\"id\":\"64093\",\"firstName\":\"Michael\",\"lastName\":\"M.\",\"gender\":\"male\",\"photo\":{\"prefix\":\"https:\\/\\/irs0.4sqi.net\\/img\\/user\\/\",\"suffix\":\"\\/1JRGLQIPQ2AORO2I.jpg\"}},\"visibility\":\"public\"}],\"dupesRemoved\":0}}}"
+    http_version:
+  recorded_at: Fri, 14 Jun 2013 19:12:14 GMT
+recorded_with: VCR 2.5.0
