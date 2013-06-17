@@ -26,11 +26,14 @@ module Mosaic
       def initialize(attributes = {})
         super
         self.location &&= Mosaic::Foursquare::Venue::Location.new(self.location)
-        self.updates = Mosaic::Foursquare::Update.from_venue(attributes)
         self.mayor &&= (self.mayor['user'] ? Mosaic::Foursquare::User.new(self.mayor['user']) : nil)
         self.stats &&= Mosaic::Foursquare::Venue::Stats.new(self.stats)
-        self.stats.photos_count = attributes["photos"]["count"]
-        self.stats.updates_count = attributes["pageUpdates"]["count"]
+        if attributes["pageUpdates"]
+          self.updates = Mosaic::Foursquare::Update.from_venue(attributes)
+          self.stats.updates_count = attributes["pageUpdates"]["count"]
+        end
+        self.stats.photos_count = attributes["photos"]["count"] if attributes ["photos"]
+        self
       end
 
       def herenow(options = {})

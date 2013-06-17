@@ -1,2 +1,3 @@
 oauth_token: "oauth_token"
 venue_id: "venue_id"
+tip_id: "tip_id"

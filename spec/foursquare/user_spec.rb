@@ -1,6 +1,6 @@
 require File.expand_path('../../spec_helper.rb', __FILE__)
 
-describe Mosaic::Foursquare::Update, :vcr => {:cassette_name => 'Venue/shared'} do
+describe Mosaic::Foursquare::User, :vcr => {:cassette_name => 'Venue/shared'} do
   context "when authenticated" do
     before(:each) do
       Mosaic::Foursquare.configure(:oauth_token => RSpec.configuration.oauth_token)
