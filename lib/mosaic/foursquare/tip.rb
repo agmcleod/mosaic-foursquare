@@ -9,13 +9,6 @@ module Mosaic
           response = query("/tips/#{id}", options)
           self.new response['response']['tip']
         end
-
-        def from_venue(venue_id, options = {})
-          response = query("/venues/#{venue_id}/tips", options)
-          response['response']['tips']['items'].map do |tip|
-            self.new tip
-          end
-        end
       end
 
       def initialize(attributes = {})

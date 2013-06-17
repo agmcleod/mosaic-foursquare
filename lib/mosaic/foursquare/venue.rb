@@ -45,6 +45,11 @@ module Mosaic
         response = self.class.query("/venues/#{id}/photos", options)
         response['response']['photos']['items'].collect { |item| Mosaic::Foursquare::Photo.new(item) }
       end
+
+      def tips(options = {})
+        response = self.class.query("/venues/#{id}/tips", options)
+        response['response']['tips']['items'].collect { |item| Mosaic::Foursquare::Tip.new(item) }
+      end
     end
   end
 end
