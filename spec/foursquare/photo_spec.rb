@@ -21,6 +21,11 @@ describe Mosaic::Foursquare::Photo, :vcr => {:cassette_name => 'Venue/shared'} d
           expect(photo.url).to eql("https://irs2.4sqi.net/img/general/original/photopath.jpg")
         end
 
+        it "should have the author of the photo as the user argument, and load their profile picture" do
+          expect(photo.user).to be_an_instance_of(Mosaic::Foursquare::User)
+          expect(photo.user.photo).to be_an_instance_of(Mosaic::Foursquare::Photo)
+        end
+
         it "should pass arguments into the url" do
           expect(photo.url("300x500")).to eql("https://irs2.4sqi.net/img/general/300x500/photopath.jpg")
         end
