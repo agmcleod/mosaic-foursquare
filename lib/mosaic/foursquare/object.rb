@@ -1,21 +1,27 @@
-require 'httparty'
+require 'faraday'
+require 'faraday_middleware'
 
 module Mosaic
   module Foursquare
     class Object
       include Mosaic::Utils::Helpers
-      include HTTParty
-      base_uri 'https://api.foursquare.com/v2'
 
       class << self
+        def conn
+          @conn ||= Faraday.new('https://api.foursquare.com/v2/') do |faraday|
+            faraday.request :url_encoded
+            faraday.response :json, :content_type => /\bjson$/
+            faraday.use Faraday::Response::RaiseError
+
+            faraday.adapter Faraday.default_adapter
+          end
+        end
+
         def query(path, options)
           options = Mosaic::Foursquare.config.merge(options)
           self.request_count += 1
-          # STDERR.puts "REQUEST[#{self.request_count}]: #{path} with #{options.inspect}"
-          response = get(path, :query => options.merge(:v =>20130614))
-          # STDERR.puts "RESPONSE[#{self.request_count}]: #{response.inspect}"
-          response.error! unless response.success?
-          response
+          response = conn.get path, options.merge(:v =>20130614)
+          response.body
         end
 
         def request_count
