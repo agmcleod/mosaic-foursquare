@@ -7,7 +7,7 @@ module Mosaic
 
       class << self
         def find(id, options = {})
-          response = query("/checkins/#{id}", options)
+          response = query("checkins/#{id}", options)
           self.new response['response']['checkin']
         end
       end

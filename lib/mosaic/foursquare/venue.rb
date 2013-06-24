@@ -7,7 +7,7 @@ module Mosaic
 
       class << self
         def find(id, options = {})
-          response = query("/venues/#{id}", options)
+          response = query("venues/#{id}", options)
           self.new response['response']['venue']
         end
       end
@@ -37,17 +37,17 @@ module Mosaic
       end
 
       def herenow(options = {})
-        response = self.class.query("/venues/#{id}/herenow", options)
+        response = self.class.query("venues/#{id}/herenow", options)
         response['response']['hereNow']['items'].collect { |item| Mosaic::Foursquare::Checkin.new(item) }
       end
 
       def photos(options = {})
-        response = self.class.query("/venues/#{id}/photos", options)
+        response = self.class.query("venues/#{id}/photos", options)
         response['response']['photos']['items'].collect { |item| Mosaic::Foursquare::Photo.new(item) }
       end
 
       def tips(options = {})
-        response = self.class.query("/venues/#{id}/tips", options)
+        response = self.class.query("venues/#{id}/tips", options)
         response['response']['tips']['items'].collect { |item| Mosaic::Foursquare::Tip.new(item) }
       end
     end

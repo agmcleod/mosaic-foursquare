@@ -16,7 +16,8 @@ Gem::Specification.new do |s|
   s.files =`git ls-files`.split($/)
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  s.add_dependency "httparty", "~> 0.10.2"
+  s.add_dependency "faraday", "~> 0.8.7"
+  s.add_dependency "faraday_middleware", "~> 0.9.0"
 
   s.add_development_dependency "rspec"
   s.add_development_dependency "rake"
