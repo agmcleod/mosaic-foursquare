@@ -18,5 +18,7 @@ RSpec.configure do |config|
   config.add_setting :oauth_token, :default => FOURSQUARE_CONFIG["oauth_token"]
   config.add_setting :venue_id, :default => FOURSQUARE_CONFIG["venue_id"]
   config.add_setting :tip_id, :default => FOURSQUARE_CONFIG["tip_id"]
+  config.add_setting :checkin_id, :default => FOURSQUARE_CONFIG["checkin_id"]
+  config.add_setting :checkin_signature, :default => FOURSQUARE_CONFIG["checkin_signature"]
   config.treat_symbols_as_metadata_keys_with_true_values = true
 end
