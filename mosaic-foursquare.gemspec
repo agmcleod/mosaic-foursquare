@@ -24,4 +24,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
   s.add_development_dependency "vcr"
   s.add_development_dependency "webmock"
+  if RUBY_VERSION < '1.9.3'
+    s.add_development_dependency "rcov"
+  else
+    s.add_development_dependency "simplecov"
+    s.add_development_dependency "simplecov-rcov"
+  end
 end
